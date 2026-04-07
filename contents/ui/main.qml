@@ -7,23 +7,13 @@ import org.kde.kirigami as Kirigami
 PlasmoidItem {
     id: root
 
-    preferredRepresentation: iconRepresentation
-    
-    // Header for the widget
+    // Core Plasmoid properties
     Plasmoid.title: i18n("KSnipSnip")
     Plasmoid.icon: "spectacle"
     Plasmoid.status: PlasmaCore.Types.ActiveStatus
     
-    // Define an action that shows up in the context menu and can be triggered
-    Component.onCompleted: {
-        plasmoid.setAction("snip", i18n("Take New Snip"), "spectacle");
-    }
-
-    function action_snip() {
-        launchHelper();
-    }
-
-    iconRepresentation: Kirigami.Icon {
+    // Explicitly define represention for Taskbar/System Tray
+    compactRepresentation: Kirigami.Icon {
         source: plasmoid.icon
         
         MouseArea {
@@ -34,10 +24,19 @@ PlasmoidItem {
         }
     }
 
+    // Context menu actions
+    Component.onCompleted: {
+        plasmoid.setAction("snip", i18n("Take New Snip"), "spectacle");
+    }
+
+    function action_snip() {
+        launchHelper()
+    }
+
     import "./lib" as Lib
 
     function launchHelper() {
-        executable.exec("ksnipsnip-helper");
+        executable.exec("ksnipsnip-helper")
     }
 
     Lib.ExecUtil {
