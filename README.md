@@ -22,21 +22,25 @@ Inspired by [Kasasa](https://github.com/KelvinNovais/Kasasa) and refined with pa
 
 ### Building
 
+Run these commands from the project root:
+
 ```bash
 mkdir build && cd build
 cmake ..
 make -j$(nproc)
+cd ..
 ```
 
 ### Installation
 
-1. **Install the helper binary** (required for snipping):
+**Note: Perform these steps from the project root directory.**
+
+1. **Install the helper binary**:
 ```bash
 sudo cp build/src/ksnipsnip-helper /usr/local/bin/
 ```
 
 2. **Install the Plasma widget**:
-Run this from the project root directory:
 ```bash
 kpackagetool6 --type Plasma/Applet --install .
 ```
