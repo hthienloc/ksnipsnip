@@ -8,8 +8,13 @@
         ],
         "Category": "Utilities",
         "Description": "Snipping tool for KDE Taskbar with interactive reference windows.",
-        "Icon": "ksnip",
+        "Icon": "spectacle",
         "Id": "org.kde.ksnipsnip",
+        "Keywords": [
+            "snip",
+            "screenshot",
+            "capture"
+        ],
         "Name": "KSnipSnip",
         "ServiceTypes": [
             "Plasma/Applet"
