@@ -11,11 +11,12 @@ PlasmoidItem {
     
     // Header for the widget
     Plasmoid.title: i18n("KSnipSnip")
-    Plasmoid.icon: "ksnip"
+    Plasmoid.icon: "spectacle"
+    Plasmoid.status: PlasmaCore.Types.ActiveStatus
     
     // Define an action that shows up in the context menu and can be triggered
     Component.onCompleted: {
-        plasmoid.setAction("snip", i18n("Take New Snip"), "ksnip");
+        plasmoid.setAction("snip", i18n("Take New Snip"), "spectacle");
     }
 
     function action_snip() {
