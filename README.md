@@ -28,9 +28,27 @@ cmake ..
 make -j$(nproc)
 ```
 
-### Running
+### Installation
 
-The standalone binary can be found at `build/src/ksnipsnip-helper`.
+1. **Install the helper binary** (required for snipping):
+```bash
+sudo cp build/src/ksnipsnip-helper /usr/local/bin/
+```
+
+2. **Install the Plasma widget**:
+Run this from the project root directory:
+```bash
+kpackagetool6 --type Plasma/Applet --install .
+```
+
+### Usage
+
+- Click the **KSnipSnip** icon in your taskbar or system tray.
+- Drag to select an area.
+- The reference window will appear. 
+- **Mouse Wheel**: Zoom.
+- **Left Drag**: Move window.
+- **Right Click**: Close window.
 
 ## 🖋️ Author
 
