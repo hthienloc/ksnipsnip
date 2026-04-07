@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "hthienloc@user.com",
+                "Name": "hthienloc"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Snipping tool for KDE Taskbar with interactive reference windows.",
+        "Icon": "ksnip",
+        "Id": "org.kde.ksnipsnip",
+        "Name": "KSnipSnip",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.1"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Internal-Version": "6.0",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

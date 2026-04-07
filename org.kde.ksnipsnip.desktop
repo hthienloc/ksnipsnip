@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=KSnipSnip
+Comment=Reference Screen Cropper
+Exec=ksnipsnip-helper
+Icon=ksnip
+Type=Application
+Categories=Utility;
+Terminal=false
+StartupNotify=true
